@@ -1,0 +1,35 @@
+.alert-info {
+    color: black;
+    background-color: lightgoldenrodyellow;
+    font-family: emoji;
+}
+.alert {
+    position: relative;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+}
+
+.um{
+    position: relative;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+    color: black;
+    background-color: lightgoldenrodyellow;
+    font-family: emoji;
+}
+.ui{
+
+}
+header{
+    width: 90%;
+    margin-left: 5%;
+}
+footer{
+    width: 80%;
+    margin-left: 10%;
+}
+
