@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appho')
 
 @section('title-block'){{$data->subject}}@endsection
 <div class="container">

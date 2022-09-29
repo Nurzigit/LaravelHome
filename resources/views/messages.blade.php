@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appho')
 
 @section('title-block')Все сообщения@endsection
 <div class="container">

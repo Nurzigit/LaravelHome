@@ -10,7 +10,14 @@
     border: 1px solid transparent;
     border-radius: 1.25rem;
 }
-
+.a_link {
+    position: relative;
+    margin-top: -30%;
+    color: black;
+}
+.a_link:hover {
+    color: whitesmoke;
+}
 .um{
     position: relative;
     padding: 2rem 2rem;

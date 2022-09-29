@@ -1,5 +1,7 @@
 <?php
 
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})-> name('home');
+
 Route::get('/about', function () {
     return view('about');
 })-> name('about');
@@ -44,3 +44,7 @@ Route::post(
     '/contact/all/{id}/update',
     'App\Http\Controllers\ContactController@updateMessageSubmit'
 )-> name ('contact-update-submit');
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

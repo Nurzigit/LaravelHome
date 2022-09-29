@@ -1,16 +1,23 @@
 @extends('layouts.app')
 
-@section('title-block')Главная страница@endsection
-
 @section('content')
-    <h1>Главная страница</h1>
-    <p>В уроке мы изучим отслеживание различных URL адресов, а также познакомимся с созданием HTML шаблонов. К концу урока вы создадите три страницы: главную, про компанию и страницу контактов. </p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-@endsection
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-
-
-@section('aside')
-    @parent
-    <p>Доп текст</p>
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

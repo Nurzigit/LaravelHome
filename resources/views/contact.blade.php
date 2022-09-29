@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appho')
 
 @section('title-block')<p>Contact page</p>@endsection
 @section('content')
