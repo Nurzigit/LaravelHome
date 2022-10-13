@@ -12,13 +12,13 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://i.artfile.ru/1980x1080_638734_[www.ArtFile.ru].jpg" alt="Los Angeles" class="d-block w-100">
+            <img src="https://travelata-a.akamaihd.net/thumbs/1920x1080/upload/2017_18/content_hotel_5907aec2d4c644.04274759.jpg" alt="Los Angeles" class="d-block w-100">
         </div>
         <div class="carousel-item">
-            <img src="https://i.artfile.ru/1980x1080_979274_[www.ArtFile.ru].jpg" alt="Chicago" class="d-block w-100">
+            <img src="https://travelata-a.akamaihd.net/thumbs/1920x1080/upload/2017_18/content_hotel_5907aec2d4c644.04274759.jpg" alt="Chicago" class="d-block w-100">
         </div>
         <div class="carousel-item">
-            <img src="https://wallpapercave.com/wp/wp2342125.jpg" alt="New York" class="d-block w-100">
+            <img src="https://travelata-a.akamaihd.net/thumbs/1920x1080/upload/2017_18/content_hotel_5907aec2d4c644.04274759.jpg" alt="New York" class="d-block w-100">
         </div>
     </div>
 
