@@ -45,6 +45,8 @@ Route::post(
     'App\Http\Controllers\ContactController@updateMessageSubmit'
 )-> name ('contact-update-submit');
 
-Auth::routes();
+
+
+// Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

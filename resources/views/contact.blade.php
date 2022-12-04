@@ -22,12 +22,12 @@
 
         <div class="col-12">
 
-<form action="{{ route('contact-form') }}" method="post">
+<form action="{{ route('contact-form') }}" method="post" enctype="multipart/form-data">
 
     @csrf
 
     <div class="form-group mt-2">
-        <label for="name">Введите имя</label>
+        <label for="name">Имя</label>
         <input type="text" name="name" placeholder="Введите имя" id="name" class="form-control">
     </div>
     <div class="form-group mt-3">
@@ -41,6 +41,9 @@
     <div class="form-group mt-3">
         <label for="message">Cообщения</label>
         <textarea name="message" id="message" class="form-control" placeholder="Введите сообщения"></textarea>
+    </div>
+    <div class="mt-5">
+        <input type="file" class="form-control" name="image" />
     </div>
     <br>
     <button style="position: relative; background: antiquewhite; width: 22%; height: 3.5rem; color: black" type="submit" class="btn btn-success">Отправить</button>

@@ -9,18 +9,18 @@
                 <h1>{{$data->subject}}</h1>
                 </center>
                     <div class="um">
-                        <div class="a">
+
+                        <div class="a mt-5">
                             <center>
-                            <img src="{{ $data->name }}" height="500" width="700" alt="">
-                                <br>
+                                <img src="/storage/{{ $data->images }}" height="500" width="800" alt="">
                             </center>
-                            <center>
+                        <center>
                             <p class="mt-5">{{ $data->message }}</p>
                             <p>{{ $data->email }}</p>
                             <p><small>{{ $data->created_at }}</small></p>
                             <a href="{{ route('contact-update', $data->id) }}"><button class="btn btn-dark">Редактировать</button></a>
                             <a href="{{ route('contact-delete', $data->id) }}"><button class="btn btn-danger">Удалить</button></a>
-                            </center>
+                        </center>
                         </div>
                     </div>
 

@@ -9,11 +9,9 @@
     @foreach($Data as $el)
         <div class="um">
             <div class="a">
+                <img src="{{ $el -> images }}" alt="">
                 <h3>{{ $el -> subject }}</h3>
                 <p>{{$el->email}}</p>
-                <center>
-                <img src="{{$el->name}}" height="250" width="450" alt="">
-                </center>
                 <p><small>{{ $el->created_at }}</small></p>
                 <a href="{{ route('contact-data-one', $el->id) }}"><button class="btn btn-light">Детальнее</button></a>
             </div>

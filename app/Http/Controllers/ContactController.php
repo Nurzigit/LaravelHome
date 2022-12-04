@@ -15,8 +15,15 @@ class ContactController extends Controller
         $contact -> subject = $req -> input('subject');
         $contact -> message = $req -> input('message');
 
-        $contact -> save();
+        if ($req->file('image') == null) {
+            $url = " ";
+            $contact->images = $url;
+        }else{
+            $url = $req -> file('image')->store('images', 'public');
+            $contact->images = $url;
+        }
 
+        $contact -> save();
         return redirect() -> route('home');
 
     }
@@ -28,6 +35,7 @@ class ContactController extends Controller
     public function showOneMessage($id){
         $contact = new Contact;
         return view('one-message', ['data'=> $contact->find($id)]);
+
     }
 
     public function updateMessage($id){

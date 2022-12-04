@@ -1,6 +1,11 @@
 <div class="container mt -5">
     <div class="row">
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <center>
+            <h1>Welcome,
+                {{Auth::user() -> name}}!!
+            </h1>
+        </center>
+<div id="demo" class="carousel slide mt-4" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
